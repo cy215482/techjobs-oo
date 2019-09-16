@@ -29,15 +29,38 @@ public class JobForm {
      */
 
     @NotNull
-    private int LocationId;
+    private int locationId;
+
+    public int getCoreCompetencyId() {
+        return coreCompetencyId;
+    }
+
+    public void setCoreCompetencyId(int coreCompetencyId) {
+        this.coreCompetencyId = coreCompetencyId;
+    }
+
+    public int getPositionTypeId() {
+        return positionTypeId;
+    }
+
+    public void setPositionTypeId(int positionTypeId) {
+        this.positionTypeId = positionTypeId;
+    }
 
     @NotNull
-    private int PositionTypeId;
+    private int positionTypeId;
 
-    @Not Null
-    private int CoreCompetencies;
+    @NotNull
+    private int coreCompetencyId;
 
+    public int getLocationId() {
+        return locationId;
     }
+
+    public void setLocationId(int locationId) {
+        this.locationId = locationId;
+    }
+
     private ArrayList<Employer> employers;
     private ArrayList<Location> locations;
     private ArrayList<CoreCompetency> coreCompetencies;
